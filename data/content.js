@@ -67,7 +67,7 @@ export const content = {
   // Status options: 'Live' | 'In Progress' | 'Coming Soon'
   // ═══════════════════════════════════════════════════════════════════════════
   projects: {
-    title: "Selected Side Projects",
+    title: "What I've shipped",
     items: [
       {
         title: 'Fumble Machine',
