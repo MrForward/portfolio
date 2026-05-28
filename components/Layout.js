@@ -2,19 +2,30 @@ import Head from 'next/head';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
-export default function Layout({ children, title = 'World Of Krishna' }) {
+const SITE_URL = 'https://chaitanya.lol';
+
+export default function Layout({
+  children,
+  title = 'Krishna Chaitanya — AI Product Manager & Builder',
+  description = 'AI Product Manager with 5+ years building 0→1 products. Currently shipping AI agents and tools. Based in Hyderabad.',
+  path = '/',
+}) {
+  const url = `${SITE_URL}${path}`;
+
   return (
     <div className="min-h-screen px-6 md:px-12 max-w-4xl mx-auto flex flex-col justify-between">
       <Head>
         <title>{title}</title>
-        <meta name="description" content="AI Product Manager building scalable solutions" />
+        <meta name="description" content={description} />
 
-        {/* proper favicon link(s) */}
+        {/* Open Graph */}
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:url" content={url} />
+        <meta property="og:type" content="website" />
+
+        {/* Favicon */}
         <link rel="icon" href="/krishnafavicon.jpg" type="image/jpeg" />
-        {/* recommended: create PNG/ICO versions and add them for better support */}
-        {/* <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" /> */}
-        {/* <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" /> */}
-        {/* <link rel="manifest" href="/site.webmanifest" /> */}
       </Head>
 
       <div className="flex-1 flex flex-col">
@@ -23,7 +34,7 @@ export default function Layout({ children, title = 'World Of Krishna' }) {
           {children}
         </main>
       </div>
-      
+
       <Footer />
     </div>
   );

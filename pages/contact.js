@@ -3,7 +3,11 @@ import { content } from '../data/content';
 
 export default function Contact() {
   return (
-    <Layout title="Contact - World of Krishna">
+    <Layout
+      title="Contact — Krishna Chaitanya"
+      description="Get in touch with Krishna Chaitanya. Open to jamming on new products, AI workflows, and interesting collaborations."
+      path="/contact"
+    >
       <section className="max-w-xl">
         <h1 className="mb-8">{content.contact.title}</h1>
         <div className="text-xl text-gray-700 dark:text-gray-300 mb-8 flex flex-col gap-6">

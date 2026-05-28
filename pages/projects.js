@@ -4,7 +4,11 @@ import { content } from '../data/content';
 
 export default function Projects() {
     return (
-        <Layout title="Projects - Krishna">
+        <Layout
+            title="Builds — Krishna Chaitanya"
+            description="Side projects I've shipped: Fumble Machine, ProdReady, SkillTree, and more AI-powered tools."
+            path="/projects"
+        >
             <section>
                 <h1 className="mb-12">{content.projects.title}</h1>
                 <div className="space-y-8">

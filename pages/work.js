@@ -3,7 +3,11 @@ import { content } from '../data/content';
 
 export default function Work() {
   return (
-    <Layout title="Work - World of Krishna">
+    <Layout
+      title="Work — Krishna Chaitanya"
+      description="Selected work experience: Nielsen Media, Altimetrik HRTech SaaS, and co-founding a short-video startup scaled to 10K+ downloads."
+      path="/work"
+    >
       <section>
         <h1 className="mb-12">{content.work.title}</h1>
         <div className="space-y-12">

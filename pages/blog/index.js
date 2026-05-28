@@ -13,7 +13,11 @@ export async function getStaticProps() {
 
 export default function Blog({ allPostsData }) {
   return (
-    <Layout title="Blog - World of Krishna">
+    <Layout
+      title="Tinkering — Krishna Chaitanya"
+      description="Writing about product building, AI agents, startup lessons, and things I'm figuring out."
+      path="/blog"
+    >
       <section>
         <h1 className="mb-12">Writing</h1>
         <div className="space-y-10">
