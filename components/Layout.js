@@ -19,10 +19,15 @@ export default function Layout({
         <meta name="description" content={description} />
 
         {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Krishna Chaitanya" />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:url" content={url} />
-        <meta property="og:type" content="website" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:creator" content="@chaitanyabuilds" />
 
         {/* Favicon */}
         <link rel="icon" href="/krishnafavicon.jpg" type="image/jpeg" />

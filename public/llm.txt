@@ -1,0 +1,32 @@
+# Krishna Chaitanya
+
+> AI Product Manager and builder based in Hyderabad, India.
+
+I build AI-driven, user-first products for fast-moving teams. 4+ years of experience taking products from 0 to 1 across B2B and B2C. Currently learning LangGraph and shipping AI agents.
+
+## Work
+
+- Nielsen Media (2024–Present): Leading Digital Content Rating product across US and 5 countries. Clients include Google, Disney, Audicom.
+- Altimetrik (2022–2024): Led HRTech SaaS platform DEX — onboarding, sourcing modules, innovation.
+- Astrotoppex (2020–2021): Co-founded a short-video app. 10K+ downloads, 2K DAU, 130 creators in 12 days. ₹2M+ MRR on services arm.
+
+## Builds
+
+- Fumble Machine: A viral financial regret engine. Calculates real-time opportunity cost of purchases vs stock market. Generates shareable Loss Receipts.
+- ProdReady: Automated quality gate for AI-generated code. Detects secret leaks and SEO gaps LLMs miss.
+- SkillTree (coming soon): AI agent that turns vague goals into structured learning curricula with auto-generated quizzes.
+
+## Writing
+
+- I Built a TikTok Competitor, Got 10K Downloads in a Week, and Shut It Down in 3 Months
+
+## Links
+
+- Homepage: https://chaitanya.lol
+- Work: https://chaitanya.lol/work
+- Builds: https://chaitanya.lol/projects
+- Writing: https://chaitanya.lol/blog
+- Contact: https://chaitanya.lol/contact
+- Twitter: https://x.com/chaitanyabuilds
+- GitHub: https://github.com/MrForward
+- LinkedIn: https://www.linkedin.com/in/chaitanya-athukuri/
