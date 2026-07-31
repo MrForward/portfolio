@@ -1,7 +1,7 @@
 {
-  "name": "app",
+  "name": "chaitanya-portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "Personal portfolio and build log for Krishna Chaitanya.",
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
@@ -10,7 +10,7 @@
     "lint": "next lint"
   },
   "keywords": [],
-  "author": "",
+  "author": "Krishna Chaitanya",
   "license": "ISC",
   "dependencies": {
     "date-fns": "^4.1.0",

@@ -1,106 +1,68 @@
-# Minimalistic Portfolio
+# Chaitanya.lol
 
-A clean, typography-focused portfolio website built with [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/), and Markdown.
+Personal portfolio and build log for Krishna Chaitanya — product manager, AI builder, and 0–1 operator.
 
-## 🚀 Getting Started
+**Live:** [chaitanya.lol](https://chaitanya.lol)
 
-### Prerequisites
+## What is here
 
-- Node.js (v18 or newer recommended)
-- npm or yarn
+- A concise product story and working philosophy
+- Selected B2B, B2C, and AI product work
+- Shipped side projects with live links
+- Long-form notes, including the honest story behind a startup that reached 10,000+ downloads and then shut down
+- Optional Last.fm “now playing” activity
 
-### Installation
+## Built with
 
-1.  Clone the repository:
-    ```bash
-    git clone https://github.com/your-username/minimal-portfolio.git
-    cd minimal-portfolio
-    ```
+- Next.js 15
+- React 19
+- Tailwind CSS
+- Markdown posts with `gray-matter` and `remark`
 
-2.  Install dependencies:
-    ```bash
-    npm install
-    ```
+## Run locally
 
-3.  Run the development server:
-    ```bash
-    npm run dev
-    ```
-
-    Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-## 📝 How to Update Content
-
-You can edit almost all the content on the site without touching the complex code.
-
-### 1. Main Pages (Home, About, Work, Contact)
-
-Open the file `data/content.js`. This file contains all the text and links for your site.
-
-**Example Structure:**
-
-```javascript
-export const content = {
-  home: {
-    title: "Hello, I'm",
-    name: "Jules", // Change this to your name
-    description: "..." // Update your intro text
-  },
-  work: {
-    title: "Selected Work",
-    projects: [
-      // Add a new project block like this:
-      {
-        title: 'New Project Name',
-        description: 'Description of the project...',
-        link: 'https://link-to-project.com',
-        year: '2024',
-      },
-      // ... existing projects
-    ]
-  },
-  // ... similar sections for About and Contact
-};
+```bash
+git clone https://github.com/MrForward/Portfolio-site.git
+cd Portfolio-site
+npm install
+cp .env.local.example .env.local
+npm run dev
 ```
 
-Simply change the text inside the quotes `'...'` or `"..."`.
+Open [http://localhost:3000](http://localhost:3000).
 
-### 2. The Blog
+Last.fm credentials are optional. Without them, the portfolio still runs; only the listening widget is unavailable.
 
-The blog is powered by Markdown files located in the `posts/` folder.
+## Update content
 
-**To add a new post:**
+Most copy and project links live in [`data/content.js`](./data/content.js). Blog posts live in [`posts/`](./posts) as Markdown with frontmatter:
 
-1.  Create a new file in `posts/` with a `.md` extension (e.g., `my-new-post.md`).
-2.  At the top of the file, add the "Frontmatter" (metadata) between three dashes:
+```markdown
+---
+title: "Post title"
+date: "2026-01-01"
+description: "One-line summary"
+---
+```
 
-    ```markdown
-    ---
-    title: 'My New Post Title'
-    date: '2024-01-01'
-    description: 'A short summary of the post that appears on the list page.'
-    ---
-    ```
+Project images belong in `public/projects/`. Add or reorder project objects in `data/content.js` to change the portfolio grid.
 
-3.  Write your content below the second `---` using standard Markdown.
-    -   `# Heading 1`
-    -   `## Heading 2`
-    -   `**Bold Text**`
-    -   `[Link Text](url)`
+## Project structure
 
-### 3. Social Links
+```text
+components/   Shared UI and layout
+data/         Portfolio copy and project data
+lib/          Markdown and Last.fm helpers
+pages/        Site routes and API route
+posts/        Long-form writing
+public/       Images, icons, robots, sitemap, and llm.txt
+styles/       Global styles
+```
 
-Update your social media links in the `contact` section of `data/content.js`.
+## Production
 
-## 🎨 Customization
+The site is deployed on Vercel. Before publishing content changes, run:
 
--   **Dark Mode:** The site includes a dark mode toggle automatically.
--   **Colors/Fonts:** To change the core styles, you would need to edit `tailwind.config.js` or `styles/globals.css`.
-
-## 📦 Deployment
-
-The easiest way to deploy this app is using [Vercel](https://vercel.com/new) or [Netlify](https://www.netlify.com/).
-
-1.  Push your code to a GitHub repository.
-2.  Import the project into Vercel/Netlify.
-3.  It will automatically detect Next.js and deploy your site.
+```bash
+npm run build
+```

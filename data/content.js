@@ -50,7 +50,7 @@ export const content = {
       "I'm always up for jamming on new products, analyzing micro trends and AI workflows.",
       "If you're building/working on something interesting or want help for your product, Happy to talk."
     ],
-    email: "hello@chaitanyaa.lol",
+    email: "hello@chaitanya.lol",
     socials: [
       { name: "Twitter / X", link: "https://x.com/chaitanyabuilds" },
       { name: "GitHub", link: "https://github.com/MrForward" },
